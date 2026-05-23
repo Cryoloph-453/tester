@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title> Quick Man </title>
+			
+			<meta charset="utf-8">
+			<meta name="description" content="External Styling/Mega Man 2 Overview">
+			<meta name="keywords" content="Mega Man, Quick Man, quick Man, Air Man, Bubble Man, Heat Man, Wood Man, Crash Man, Flash Man">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="refresh" content="200">
+			
+			<link rel="stylesheet" href="css/externalstyling.css">
+			<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+			
+		</head>
+		
+		<body id="quickman">
+		
+			<header id="quickmanheader">
+			
+				<a id="home" href="index.html"><img id="megamanlogo" src="images/logo.png"></a>
+				
+				<h2 id="quickmanbossname"> QUICK MAN </h2>
+				
+			</header>
+
+			<h4 id="quickmanbossselect"> BOSS SELECT </h4>
+			
+			<nav id="quickmannav">
+			
+				<a href="metalman.html"> Metal Man </a>
+				<a href="quickman.html"> Quick Man </a>
+				<a href="bubbleman.html"> Bubble Man </a>
+				<a href="woodman.html"> Wood Man </a>
+				<a href="airman.html"> Air Man </a>
+				<a href="heatman.html"> Heat Man </a>
+				<a href="crashman.html"> Crash Man </a>
+				<a href="flashman.html"> Flash Man </a>
+				
+			</nav>
+			
+			<main>
+			
+				<section>
+					
+					<div id="quickmanpics">
+
+						<div id="quickmanpic1"><img src="images/quickman.png"></div>
+						<div id="quickmanpic2"><img src="images/quickman2.jpg"></div>
+
+					</div>
+					<div id="quickmanstage"><iframe width="560" height="315" src="https://www.youtube.com/embed/yZamMSHKpX8?si=KUabOvtTbRxpj5AV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+					
+				</section>
+				
+				<section>
+				
+					<h3 id="quickmanoverview"> OVERVIEW </h3>
+
+					<div id="quickmantext">
+
+						<p> Quick Man's main weapon is the Quick Boomerang, a fast-moving projectile that can be thrown at enemies. He is knonw for his speed and agility as well as being a very arrogant character in  the manga, often being overconfident. He is the fastest of all the Robot Masters and he is often very impulsive. </p>
+
+					</div>
+
+					<h3 id="quickmanweaknessheading"> WEAKNESS </h3>
+
+					<div id="quickmanweakness">
+
+						<p> Quick Man is vulnerable to attacks from his own weapon and certain other bosses. This includes attacks from Air Man, Wood Man, and Flash Man weapons. </p>
+
+					</div>
+
+					<h3 id="quickmanstrengthheading"> STRENGTH </h3>
+
+					<div id="quickmanstrength">
+
+						<p> Quick Man is known for his speed and agility, making him a fast and elusive opponent. His weapon is strong against Metal Man, Bubble Man, and Heat Man. </p>
+
+					</div>
+
+				</section>
+				
+			</main>
+			
+			<footer id="quickmanfooter">
+			
+				<div id="quickmansocials">
+				
+					<a href="https://www.facebook.com/" class="quickmanmediaicons"><img src="images/facebook.png" height="75px" width="75px"></a>
+					<a href="https://www.x.com/" class="quickmanmediaicons"><img src="images/x.png" height="75px" width="75px"></a>
+					<a href="https://www.youtube.com/" class="quickmanmediaicons"><img src="images/youtube.png" height="75px" width="75px"></a>
+					<a href="https://www.tiktok.com/" class="quickmanmediaicons"><img src="images/tiktok.png" height="75px" width="75px"></a>
+
+				</div>
+
+				<div id="quickmanlegallinks">
+
+					<a href="#">Legal Notice</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+					<a href="#">Cookie Policy</a>
+
+				</div>
+				
+			</footer>
+
+			<audio id="bg-music" autoplay loop>
+
+				<source src="media/quicktheme.mp3" type="audio/mpeg">
+			
+			</audio>
+
+			<script>
+				
+				const music = document.getElementById('bg-music');
+        		const message = document.querySelector('.message');
+
+        		
+        		document.body.addEventListener('click', () => {
+           		music.play().then(() => {
+          		}).catch(err => {
+                console.error("Playback failed:", err);
+          				});
+       			 }, { once: true });
+				 
+			</script>
+			
+		</body>
+		
+	</html>

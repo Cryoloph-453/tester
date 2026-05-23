@@ -1,0 +1,2899 @@
+*{
+	margin: 0px;
+}
+
+audio{
+	display: none;
+}
+
+#bossselect{
+	background-color: #0071ef;
+}
+
+#pressstart{
+	height: 100px;
+	width: 100%;
+	display: flex;
+}
+
+#pressstart div{
+	height: 100px;
+	width: 33.3%;
+	justify-content: center;
+	align-items: center;
+} 
+
+#text-content p{
+	font-family: 'Press Start 2p';
+	color: white;
+	font-size: 30px;
+}
+
+#text-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -10px;
+	letter-spacing: 2px;
+	height: 50px;
+}
+
+.hrcontainer{
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	margin-top: 30px;
+}
+
+.first{
+	height: 2px;
+	background-color: #fff;
+	margin-top: 3px;
+}
+
+.second{
+	height: 3.25px;
+	background-color: #fff;
+	margin-top: 3px;
+}
+
+.third{
+	height: 2px;
+	background-color: #fff;
+	margin-top: 3px;
+}
+
+#row1{
+	height: 50px;
+	width: 100%;
+	background-color: #0071ef;
+	position: relative;
+	top: 20px;
+}
+
+.smallhr{
+	height: 2.2px;
+	width: 100%;
+	z-index: -100;
+	background-color: #00ebde;
+	border: none;
+	margin-top: 2.75px;
+	margin-bottom: 2.75px;
+}
+
+#bighr{
+	height: 24px;
+	width: 100%;
+	z-index: -100;
+	background-color: #00ebde;
+	border: none;
+	margin-top: 3px;
+	margin-bottom: 7px;
+}
+
+#bubblemansquare1, #airmansquare1, #quickmansquare1{
+	height: 180px;
+	width: 180px;
+	background-color: white;
+	border: solid 4px black;
+	position: absolute;
+	top: -60px;
+	left: 20.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bubblemanname1, #bubblemanname2{
+	position: absolute;
+	top: 135px;
+	left: 20.5%;
+	font-family: 'Press Start 2p';
+	font-size: 32px;
+	color: #fff;
+	width: 180px;
+}
+
+#bubblemanname2{
+	top: 170px;
+	left: 26.75%;
+}
+
+#airmanname1, #airmanname2{
+	position: absolute;
+	top: 135px;
+	left: 41.75%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#airmanname2{
+	top: 170px;
+	left: 46%;
+}
+
+#quickmanname1, #quickmanname2{
+	position: absolute;
+	top: 135px;
+	left: 60.5%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#quickmanname2{
+	top: 170px;
+	left: 66.75%;
+}
+
+
+
+#airmansquare1{
+	position: absolute;
+	top: -60px;
+	left: 40%;
+}
+
+#quickmansquare1{
+	position: absolute;
+	top: -60px;
+	left: 60.5%;
+}
+
+#bubblemansquare2, #airmansquare2, #quickmansquare2{
+	height: 170px;
+	width: 170px;
+	background-color: cyan;
+	border: solid 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#bubblemansquare3, #airmansquare3, #quickmansquare3{
+	height: 155px;
+	width: 155px;
+	background-color: cyan;
+	border: solid 4px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#headshotholder{
+	height: 145px;
+	width: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+#bubblemanheadshot, #airmanheadshot, #quickmanheadshot, #heatmanheadshot, #drwilyheadshot, #woodmanheadshot, #metalmanheadshot, #flashmanheadshot, #crashmanheadshot{
+	height: 100%;
+	width: 100%;
+}
+
+
+
+#blackcornersquare1{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+}
+
+#blackcornersquare2{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: #000000;
+}
+
+#blackcornersquare3{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: #000000;
+}
+
+#blackcornersquare4{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: #000000;
+}
+.square1:hover #blackcornersquare1, .square1:hover #blackcornersquare2, .square1:hover #blackcornersquare3, .square1:hover #blackcornersquare4{
+	animation: cornerflash 30s infinite alternate;
+}
+
+@keyframes cornerflash {
+	1%   { background-color: #000; }
+	2%  { background-color: #fff; }
+	3%  { background-color: #000; }
+	4%  { background-color: #fff; }
+	5%   { background-color: #000; }
+	6%  { background-color: #fff; }
+	7%  { background-color: #000; }
+	8%  { background-color: #fff; }
+	9%   { background-color: #000; }
+	10%  { background-color: #fff; }
+	11%  { background-color: #000; }
+	12%  { background-color: #fff; }
+	13%  { background-color: #000; }
+	14%  { background-color: #fff; }
+	15%  { background-color: #000; }
+	16%  { background-color: #fff; }
+	17%   { background-color: #000; }
+	18%  { background-color: #fff; }
+	19%  { background-color: #000; }
+	20%  { background-color: #fff; }
+	21%   { background-color: #000; }
+	22%  { background-color: #fff; }
+	23%  { background-color: #000; }
+	24%  { background-color: #fff; }
+	25%   { background-color: #000; }
+	26%  { background-color: #fff; }
+	27%  { background-color: #000; }
+	28%  { background-color: #fff; }
+	29%   { background-color: #000; }
+	30%  { background-color: #fff; }
+	31%  { background-color: #000; }
+	32%  { background-color: #fff; }
+	33%   { background-color: #000; }
+	34%  { background-color: #fff; }
+	35%  { background-color: #000; }
+	36%  { background-color: #fff; }
+	37%   { background-color: #000; }
+	38%  { background-color: #fff; }
+	39%   { background-color: #000; }
+	40%  { background-color: #fff; }
+	41%   { background-color: #000; }
+	42%  { background-color: #fff; }
+	43%  { background-color: #000; }
+	44%  { background-color: #fff; }
+	45%   { background-color: #000; }
+	46%  { background-color: #fff; }
+	47%  { background-color: #000; }
+	48%  { background-color: #fff; }
+	49%   { background-color: #000; }
+	50%  { background-color: #fff; }
+	51%  { background-color: #000; }
+	52%  { background-color: #fff; }
+	53%  { background-color: #000; }
+	54%  { background-color: #fff; }
+	55%  { background-color: #000; }
+	56%  { background-color: #fff; }
+	57%   { background-color: #000; }
+	58%  { background-color: #fff; }
+	59%  { background-color: #000; }
+	60%  { background-color: #fff; }
+	61%   { background-color: #000; }
+	62%  { background-color: #fff; }
+	63%  { background-color: #000; }
+	64%  { background-color: #fff; }
+	65%   { background-color: #000; }
+	66%  { background-color: #fff; }
+	67%  { background-color: #000; }
+	68%  { background-color: #fff; }
+	69%   { background-color: #000; }
+	70%  { background-color: #fff; }
+	71%  { background-color: #000; }
+	72%  { background-color: #fff; }
+	73%   { background-color: #000; }
+	74%  { background-color: #fff; }
+	75%  { background-color: #000; }
+	76%  { background-color: #fff; }
+	77%   { background-color: #000; }
+	78%  { background-color: #fff; }
+	79%   { background-color: #000; }
+	80%  { background-color: #fff; }
+	81%   { background-color: #000; }
+	82%  { background-color: #fff; }
+	83%  { background-color: #000; }
+	84%  { background-color: #fff; }
+	85%   { background-color: #000; }
+	86%  { background-color: #fff; }
+	87%  { background-color: #000; }
+	88%  { background-color: #fff; }
+	89%   { background-color: #000; }
+	90%  { background-color: #fff; }
+	91%  { background-color: #000; }
+	92%  { background-color: #fff; }
+	93%  { background-color: #000; }
+	94%  { background-color: #fff; }
+	95%  { background-color: #000; }
+	96%  { background-color: #fff; }
+	97%   { background-color: #000; }
+	98%  { background-color: #fff; }
+	99%  { background-color: #000; }
+	100%  { background-color: #fff; }
+}
+
+#row2{
+	height: 50px;
+	width: 100%;
+	background-color: #0071ef;
+	position: relative;
+	top: 235px;
+}
+
+#heatmansquare1, #drwilysquare1, #woodmansquare1{
+	height: 180px;
+	width: 180px;
+	background-color: white;
+	border: solid 4px black;
+	position: absolute;
+	top: -60px;
+	left: 20.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#drwilysquare1{
+	position: absolute;
+	top: -60px;
+	left: 40%;
+}
+
+#woodmansquare1{
+	position: absolute;
+	top: -60px;
+	left: 60.5%;
+}
+
+
+#heatmansquare2, #drwilysquare2, #woodmansquare2{
+	height: 170px;
+	width: 170px;
+	background-color: cyan;
+	border: solid 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#heatmansquare3, #drwilysquare3, #woodmansquare3{
+	height: 155px;
+	width: 155px;
+	background-color: cyan;
+	border: solid 4px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#heatmanname1, #heatmanname2{
+	position: absolute;
+	top: 135px;
+	left: 20.5%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#heatmanname2{
+	top: 170px;
+	left: 26.75%;
+}
+
+#drwilyname1, #drwilyname2{
+	position: absolute;
+	top: 135px;
+	left: 41.75%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#drwilyname2{
+	top: 170px;
+	left: 44%;
+}
+
+#woodmanname1, #woodmanname2{
+	position: absolute;
+	top: 135px;
+	left: 60.5%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#woodmanname2{
+	top: 170px;
+	left: 66.75%;
+}
+
+#row3{
+	height: 50px;
+	width: 100%;
+	background-color: #0071ef;
+	position: relative;
+	top: 445px;
+}
+
+#metalmansquare1, #flashmansquare1, #crashmansquare1{
+	height: 180px;
+	width: 180px;
+	background-color: white;
+	border: solid 4px black;
+	position: absolute;
+	top: -60px;
+	left: 20.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#metalmanname1, #metalmanname2{
+	position: absolute;
+	top: 135px;
+	left: 20.5%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#metalmanname2{
+	top: 170px;
+	left: 26.75%;
+}
+
+#flashmanname1, #flashmanname2{
+	position: absolute;
+	top: 135px;
+	left: 41.75%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#flashmanname2{
+	top: 170px;
+	left: 46%;
+}
+
+#crashmanname1, #crashmanname2{
+	position: absolute;
+	top: 135px;
+	left: 60.5%;
+	font-family: 'Press Start 2p';
+	font-size: 30px;
+	color: #fff;
+	width: 180px;
+}
+
+#crashmanname2{
+	top: 170px;
+	left: 66.75%;
+}
+
+
+
+#flashmansquare1{
+	position: absolute;
+	top: -60px;
+	left: 40%;
+}
+
+#crashmansquare1{
+	position: absolute;
+	top: -60px;
+	left: 60.5%;
+}
+
+#metalmansquare2, #flashmansquare2, #crashmansquare2{
+	height: 170px;
+	width: 170px;
+	background-color: cyan;
+	border: solid 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#metalmansquare3, #flashmansquare3, #crashmansquare3{
+	height: 155px;
+	width: 155px;
+	background-color: cyan;
+	border: solid 4px white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+#metalman{
+	background-color: rgb(220, 40, 75);
+}
+
+#metalmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#metalmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #e3e3e3;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #FFE47F;
+}
+
+#metalmanbossselect{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#metalmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #e3e3e3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#metalmannav a{
+	color: #FFE47F;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#metalmannav a:hover{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: metalflashColors 2s infinite alternate;
+}
+
+  @keyframes metalflashColors {
+        0%   { color: #FFE47F; }
+        25%  { color: rgb(17, 66, 241); }
+        50%  { color: #FFE47F; }
+        75%  { color: rgb(17, 66, 241); }
+        100% { color: #FFE47F; }
+    }
+
+  #metalmannav a:active{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: flashColor 1s infinite alternate;
+  }
+
+#metalmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#metalmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#metalmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#metalmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#metalmanoverview{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#metalmantext{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #e3e3e3;
+	padding: 10px;
+}
+
+#metalmanweaknessheading{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#metalmanweakness{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #e3e3e3;
+	padding: 10px;
+}
+
+#metalmanstrengthheading{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#metalmanstrength{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #e3e3e3;
+	padding: 10px;
+}
+
+#metalmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: rgb(220, 40, 75);
+	align-items: center;
+	justify-content: center;
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #e3e3e3;
+}
+
+#metalmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.metalmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #e3e3e3;
+	box-shadow: 0px 0px 125px black;
+}
+
+#metalmansocials a{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#metalmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+
+#metalmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#metalmanlegallinks a{
+	color: #e3e3e3;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#metalmanlegallinks a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: metalflashColors 2s infinite alternate;
+}
+
+  @keyframes metalflashColors {
+		0%   { color: #FFE47F; }
+		25%  { color: rgb(17, 66, 241); }
+		50%  { color: #FFE47F; }
+		75%  { color: rgb(17, 66, 241); }
+		100% { color: #FFE47F; }
+	}
+
+
+#quickman{
+	background-color: #c8002a;
+}
+
+#quickmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#quickmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #edc99f;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #030060;
+}
+
+#quickmanbossselect{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#quickmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #edc99f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#quickmannav a{
+	color: #ffd300;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#quickmannav a:hover{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: quickflashColors 2s infinite alternate;
+}
+
+  @keyframes quickflashColors {
+        0%   { color: #edc99f; }
+        25%  { color: #030060; }
+        50%  { color: #edc99f; }
+        75%  { color: #030060; }
+        100% { color: #edc99f; }
+    }
+
+  #quickmannav a:active{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: flashColor 1s infinite alternate;
+  }
+
+#quickmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#quickmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#quickmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#quickmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#quickmanoverview{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#quickmantext{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #edc99f;
+	padding: 10px;
+}
+
+#quickmanweaknessheading{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#quickmanweakness{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #edc99f;
+	padding: 10px;
+}
+
+#quickmanstrengthheading{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#quickmanstrength{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #edc99f;
+	padding: 10px;
+}
+
+#quickmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #c8002a;
+	align-items: center;
+	justify-content: center;
+	color: #edc99f;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #edc99f;
+}
+
+#quickmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.quickmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #edc99f;
+	box-shadow: 0px 0px 125px black;
+}
+
+#quickmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#quickmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#quickmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#quickmanlegallinks a{
+	color: #edc99f;
+	text-shadow: 2px 2px #030060;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#quickmanlegallinks a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #000000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: quickflashColors 2s infinite alternate;
+}
+
+   @keyframes quickflashColors {
+        0%   { color: #ffd300; }
+        25%  { color: #030060; }
+        50%  { color: #ffd300; }
+        75%  { color: #030060; }
+        100% { color: #ffd300; }
+    }
+
+#bubbleman{
+	background-color: #0058F8;
+}
+
+#bubblemanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#bubblemanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #005000;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #00F8F8;
+}
+
+#bubblemanbossselect{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#bubblemannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #005000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#bubblemannav a{
+	color: #00F8F8;
+	text-shadow: 2px 2px #f8f8f8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#bubblemannav a:hover{
+	color: #edc99f;
+	text-shadow: 2px 2px #f8f8f8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: bubbleflashColors 2s infinite alternate;
+}
+
+  @keyframes bubbleflashColors {
+        0%   { color: #00F8F8; }
+        25%  { color: #005000; }
+        50%  { color: #00F8F8; }
+        75%  { color: #005000; }
+        100% { color: #00F8F8; }
+    }
+
+  #bubblemannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #00F8F8;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: flashColor 1s infinite alternate;
+  }
+
+#bubblemanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#bubblemanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#bubblemanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#bubblemanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#bubblemanoverview{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#bubblemantext{
+	color: #005000;
+	text-shadow: 1px 1px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #005000;
+	padding: 10px;
+}
+
+#bubblemanweaknessheading{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#bubblemanweakness{
+	color: #005000;
+	text-shadow: 1px 1px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #005000;
+	padding: 10px;
+}
+
+#bubblemanstrengthheading{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#bubblemanstrength{
+	color: #005000;
+	text-shadow: 1px 1px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #005000;
+	padding: 10px;
+}
+
+#bubblemanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #0058F8;
+	align-items: center;
+	justify-content: center;
+	color: #00F8F8;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #005000;
+}
+
+#bubblemansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.bubblemanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #005000;
+	box-shadow: 0px 0px 125px black;
+}
+
+#bubblemansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#bubblemansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#bubblemanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#bubblemanlegallinks a{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#bubblemanlegallinks a:hover{
+	color: #005000;
+	text-shadow: 2px 2px #00F8F8;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: bubbleflashColors 2s infinite alternate;
+}
+
+
+#woodman{
+	background-color: #503000;
+}
+
+#woodmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#woodmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #006800;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #85421F;
+}
+
+#woodmanbossselect{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#woodmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #006800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#woodmannav a{
+	color: #85421F;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#woodmannav a:hover{
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: woodflashColors 2s infinite alternate;
+}
+
+  @keyframes woodflashColors {
+        0%   { color: #85421F; }
+        25%  { color: #005000; }
+        50%  { color: #85421F; }
+        75%  { color: #005000; }
+        100% { color: #85421F; }
+    }
+
+  #woodmannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #85421F;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: woodflashColors 1s infinite alternate;
+  }
+
+#woodmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#woodmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#woodmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#woodmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#woodmanoverview{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#woodmantext{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #006800;
+	padding: 10px;
+}
+
+#woodmanweaknessheading{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#woodmanweakness{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #006800;
+	padding: 10px;
+}
+
+#woodmanstrengthheading{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#woodmanstrength{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #006800;
+	padding: 10px;
+}
+
+#woodmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #503000;
+	align-items: center;
+	justify-content: center;
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #006800;
+}
+
+#woodmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.woodmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #006800;
+	box-shadow: 0px 0px 125px black;
+}
+
+#woodmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#woodmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#woodmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#woodmanlegallinks a{
+	color: #006800;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#woodmanlegallinks a:hover{
+	color: #006800;
+	text-shadow: 2px 2px #85421F;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: woodflashColors 2s infinite alternate;
+}
+
+
+
+#airman{
+	background-color: #000088;
+}
+
+#airmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#airmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #FCFC00;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #A8A8FF;
+}
+
+#airmanbossselect{
+	color: #FCFC00;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#airmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #FCFC00 ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#airmannav a{
+	color: #A8A8FF;
+	text-shadow: 2px 2px #FCFC00;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#airmannav a:hover{
+	text-shadow: 2px 2px #FCFC00;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: airflashColors 2s infinite alternate;
+}
+
+  @keyframes airflashColors {
+        0%   { color: #A8A8FF; }
+        25%  { color: #000; }
+        50%  { color: #A8A8FF; }
+        75%  { color: #000; }
+        100% { color: #A8A8FF; }
+    }
+
+  #airmannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #A8A8FF;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: airflashColors 1s infinite alternate;
+  }
+
+#airmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#airmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#airmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#airmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#airmanoverview{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#airmantext{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #FCFC00;
+	padding: 10px;
+}
+
+#airmanweaknessheading{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#airmanweakness{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #FCFC00 ;
+	padding: 10px;
+}
+
+#airmanstrengthheading{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#airmanstrength{
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #FCFC00 ;
+	padding: 10px;
+}
+
+#airmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #000088;
+	align-items: center;
+	justify-content: center;
+	color: #FCFC00 ;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #FCFC00 ;
+}
+
+#airmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.airmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #FCFC00 ;
+	box-shadow: 0px 0px 125px black;
+}
+
+#airmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#airmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#airmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#airmanlegallinks a{
+	color: #FCFC00;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#airmanlegallinks a:hover{
+	color: #005000;
+	text-shadow: 2px 2px #A8A8FF;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: airflashColors 2s infinite alternate;
+}
+
+#heatman{
+	background-color: #FF0000;
+}
+
+#heatmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#heatmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #FFD700;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #91663C;
+}
+
+#heatmanbossselect{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#heatmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #FFD700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#heatmannav a{
+	color: #101010;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#heatmannav a:hover{
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: heatflashColors 2s infinite alternate;
+}
+
+  @keyframes heatflashColors {
+        0%   { color: #91663C; }
+        25%  { color: #E42A53; }
+        50%  { color: #91663C; }
+        75%  { color: #E42A53; }
+        100% { color: #91663C; }
+    }
+
+  #heatmannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #91663C;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: heatflashColors 1s infinite alternate;
+  }
+
+#heatmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#heatmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#heatmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#heatmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#heatmanoverview{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#heatmantext{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #FFD700;
+	padding: 10px;
+}
+
+#heatmanweaknessheading{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#heatmanweakness{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #FFD700;
+	padding: 10px;
+}
+
+#heatmanstrengthheading{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#heatmanstrength{
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #FFD700;
+	padding: 10px;
+}
+
+#heatmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #FF0000;
+	align-items: center;
+	justify-content: center;
+	color: #FFD700;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #FFD700;
+}
+
+#heatmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.heatmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #FFD700;
+	box-shadow: 0px 0px 125px black;
+}
+
+#heatmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#heatmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #91663C;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#heatmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#heatmanlegallinks a{
+	color: #FFD700;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#heatmanlegallinks a:hover{
+	color: #FFD700;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: heatflashColors 2s infinite alternate;
+}
+
+#crashman{
+	background-color: #E41100;
+}
+
+#crashmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 20%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#crashmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #F8D800;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #A0C0E0;
+}
+
+#crashmanbossselect{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#crashmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #F8D800;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#crashmannav a{
+	color: #101010;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#crashmannav a:hover{
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: crashflashColors 2s infinite alternate;
+}
+
+  @keyframes crashflashColors {
+        0%   { color: #A0C0E0; }
+        25%  { color: #F8D800; }
+        50%  { color: #A0C0E0; }
+        75%  { color: #F8D800; }
+        100% { color: #A0C0E0; }
+    }
+
+  #crashmannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #A0C0E0;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: crashflashColors 1s infinite alternate;
+  }
+
+#crashmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#crashmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#crashmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#crashmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#crashmanoverview{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#crashmantext{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #F8D800;
+	padding: 10px;
+}
+
+#crashmanweaknessheading{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#crashmanweakness{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #F8D800;
+	padding: 10px;
+}
+
+#crashmanstrengthheading{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#crashmanstrength{
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #F8D800;
+	padding: 10px;
+}
+
+#crashmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #E41100;
+	align-items: center;
+	justify-content: center;
+	color: #F8D800;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #F8D800;
+}
+
+#crashmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.crashmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #F8D800;
+	box-shadow: 0px 0px 125px black;
+}
+
+#crashmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#crashmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #A0C0E0;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#crashmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#crashmanlegallinks a{
+	color: #F8D800;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#crashmanlegallinks a:hover{
+	color: #F8D800;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: crashflashColors 2s infinite alternate;
+}
+
+
+#flashman{
+	background-color: #0058F8;
+}
+
+#flashmanheader{
+	height: 250px;
+	width: 100%;
+	display: flex;
+}
+
+#megamanlogo{
+	height: 150px;
+	width: 100%;
+	border-radius: 250px;
+	margin-left: 75px;
+	margin-top: 50px;
+	margin-bottom: 75px;
+	box-shadow: 0px 0px 125px black;
+}
+
+
+
+#flashmanbossname{
+	height: 250px;
+	width: 75%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	font-size: 70px;
+	color: #00E4E4 ;
+	font-family: 'Press Start 2p';
+	text-shadow: 5px 4px #BCBCBC;
+}
+
+#flashmanbossselect{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+#flashmannav{
+	align-items: center;
+	margin: 7.5%;
+	margin-top: 0px;
+	border: ridge 2px #00E4E4 ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+}
+
+#flashmannav a{
+	color: #FFFFFF;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+}
+
+#flashmannav a:hover{
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 15px;
+	font-family: 'Press Start 2p';
+	animation: flashflashColors 2s infinite alternate;
+}
+
+  @keyframes flashflashColors {
+        0%   { color: #BCBCBC; }
+        25%  { color: #00E4E4 ; }
+        50%  { color: #BCBCBC; }
+        75%  { color: #00E4E4 ; }
+        100% { color: #BCBCBC; }
+    }
+
+  #flashmannav a:active{
+	color: #f8f8f8;
+	text-shadow: 2px 2px #BCBCBC;
+	text-decoration: none;
+	font-family: 'Press Start 2p';
+	animation: flashflashColors 1s infinite alternate;
+  }
+
+#flashmanpics{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#flashmanpic1{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 5%;
+	background-color: #783204;
+}
+
+#flashmanpic2{
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	box-shadow: 0px 0px 125px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 15%;
+	background-color: #783204;
+}
+
+#flashmanstage{
+	height: 500px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#flashmanoverview{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#flashmantext{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: ridge 7px #00E4E4 ;
+	padding: 10px;
+}
+
+#flashmanweaknessheading{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#flashmanweakness{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #00E4E4 ;
+	padding: 10px;
+}
+
+#flashmanstrengthheading{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+#flashmanstrength{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10%;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	border: ridge 7px #00E4E4 ;
+	padding: 10px;
+}
+
+#flashmanfooter{
+	height: 100px;
+	width: 100%;
+	background-color: #0058F8;
+	align-items: center;
+	justify-content: center;
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 10px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	border-top: ridge 5px #00E4E4 ;
+}
+
+#flashmansocials{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	width: 100%;
+	height: 100px;
+}
+
+.flashmanmediaicons{
+	margin-top: 10px;
+	height: 75px;
+	width: 75px;
+	border-radius: 360px;
+	border: solid 2px #00E4E4 ;
+	box-shadow: 0px 0px 125px black;
+}
+
+#flashmansocials a{
+	color: #edc99f;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#flashmansocials a:hover{
+	color: #FFE47F;
+	text-shadow: 2px 2px #BCBCBC;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 60px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#flashmanlegallinks{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+#flashmanlegallinks a{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+}
+
+#flashmanlegallinks a:hover{
+	color: #00E4E4 ;
+	text-shadow: 2px 2px #000;
+	font-size: 20px;
+	text-decoration: none;
+	margin: 30px;
+	font-family: 'Press Start 2p';
+	text-align: center;
+	animation: flashflashColors 2s infinite alternate;
+}
+
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	
+		<head>
+		
+			<title> Wood Man </title>
+			
+			<meta charset="utf-8">
+			<meta name="description" content="External Styling/Mega Man 2 Overview">
+			<meta name="keywords" content="Mega Man, Quick Man, Bubble Man, Air Man, Bubble Man, Heat Man, Wood Man, Crash Man, Flash Man">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="refresh" content="200">
+			
+			<link rel="stylesheet" href="css/externalstyling.css">
+			<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+			
+		</head>
+		
+		<body id="woodman">
+		
+			<header id="woodmanheader">
+			
+				<a id="home" href="index.html"><img id="megamanlogo" src="images/logo.png"></a>
+				
+				<h2 id="woodmanbossname"> WOOD MAN </h2>
+				
+			</header>
+
+			<h4 id="woodmanbossselect"> BOSS SELECT </h4>
+			
+			<nav id="woodmannav">
+			
+				<a href="metalman.html"> Metal Man </a>
+				<a href="quickman.html"> Quick Man </a>
+				<a href="bubbleman.html"> Bubble Man </a>
+				<a href="woodman.html"> Wood Man </a>
+				<a href="airman.html"> Air Man </a>
+				<a href="heatman.html"> Heat Man </a>
+				<a href="crashman.html"> Crash Man </a>
+				<a href="flashman.html"> Flash Man </a>
+				
+			</nav>
+			
+			<main>
+			
+				<section>
+					
+					<div id="woodmanpics">
+
+						<div id="woodmanpic1"><img src="images/woodman.png"></div>
+						<div id="woodmanpic2"><img src="images/woodman2.jpg"></div>
+
+					</div>
+					<div id="woodmanstage"><iframe width="560" height="315" src="https://www.youtube.com/embed/yZamMSHKpX8?si=KUabOvtTbRxpj5AV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+					
+				</section>
+				
+				<section>
+				
+					<h3 id="woodmanoverview"> OVERVIEW </h3>
+
+					<div id="woodmantext">
+
+						<p> Wood Man is the fourth boss in Mega Man 2. He is a robot master created by Dr. Wily and is designed to be a formidable opponent for Mega Man. Wood Man is equipped with a powerful tree-based weapon called the Wood Chip, which allows him to shoot wooden chips that can trap and damage Mega Man. He is also known for his strength and ability to withstand powerful attacks, making him a challenging boss to defeat.</p>
+
+					</div>
+
+					<h3 id="woodmanweaknessheading"> WEAKNESS </h3>
+
+					<div id="woodmanweakness">
+
+						<p> Wood Man's weakness is the Metal Blade, which is the weapon obtained from defeating Metal Man. The Metal Blade is effective against Wood Man because it can break through his wooden attacks and deal significant damage. Using the Metal Blade against Wood Man can make the battle easier and increase the chances of victory.  </p>
+
+					</div>
+
+					<h3 id="woodmanstrengthheading"> STRENGTH </h3>
+
+					<div id="woodmanstrength">
+
+						<p> Wood Man is strong against Quick Man, Air Man, and Heat Man. This is because his Wood Chip weapon can trap and damage these bosses, making it difficult for them to attack effectively. </p>
+
+					</div>
+
+				</section>
+				
+			</main>
+			
+			<footer id="woodmanfooter">
+			
+				<div id="woodmansocials">
+				
+					<a href="https://www.facebook.com/" class="woodmanmediaicons"><img src="images/facebook.png" height="75px" width="75px"></a>
+					<a href="https://www.x.com/" class="woodmanmediaicons"><img src="images/x.png" height="75px" width="75px"></a>
+					<a href="https://www.youtube.com/" class="woodmanmediaicons"><img src="images/youtube.png" height="75px" width="75px"></a>
+					<a href="https://www.tiktok.com/" class="woodmanmediaicons"><img src="images/tiktok.png" height="75px" width="75px"></a>
+
+				</div>
+
+				<div id="woodmanlegallinks">
+
+					<a href="#">Legal Notice</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+					<a href="#">Cookie Policy</a>
+
+				</div>
+				
+			</footer>
+
+			<audio id="bg-music" autoplay loop>
+
+				<source src="media/woodtheme.mp3" type="audio/mpeg">
+			
+			</audio>
+
+			<script>
+				
+				const music = document.getElementById('bg-music');
+        		const message = document.querySelector('.message');
+
+        		
+        		document.body.addEventListener('click', () => {
+           		music.play().then(() => {
+          		}).catch(err => {
+                console.error("Playback failed:", err);
+          				});
+       			 }, { once: true });
+				 
+			</script>
+			
+		</body>
+		
+	</html>
